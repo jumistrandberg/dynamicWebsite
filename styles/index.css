@@ -5,14 +5,27 @@
 }
 
 body {
+    border: 3px solid red;
     background: black;
+    background-image: url("../imgs/lines-background-min.png");
+    background-size: 30%;
+    background-repeat: repeat;
+    
 }
+
+.blob {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the shape circular */
+    background: radial-gradient(circle, white 30%, transparent 70%);
+  }
+  
 
 .eye-container {
     position: absolute;
-    top: -3%;
-    left: -3%;
-    width: 75vw;
+    width: 50vw;
+    top: 0;
+    left: 0;
 }
 
 .eye-animation{ 
@@ -50,6 +63,18 @@ body {
 
 /* Small Desktop Media Query */
 @media (min-width: 1024px) {
+
+    .eye-container {
+        width: 20vw;
+    
+    }
+
+    .eye-animation{ 
+        transition: fade ease-in-out;
+        width: 100%;
+        animation: none ;
+    }
+    
  
     
     .eye-container img:nth-child(1){
