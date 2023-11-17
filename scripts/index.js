@@ -1,5 +1,4 @@
 // Get the eyeContainer from HTML
-const eyeContainer = document.getElementById('eyeContainer');
 
 // Show open eyes img on mouse hover
 function handleMouseEnter() {
@@ -15,14 +14,25 @@ function handleMouseLeave() {
   images[1].style.opacity = 0;
 }
 
-// Attach event listeners to the eyeContainer
-eyeContainer.addEventListener('mousemove', function(event) {
-  const mouseY = event.clientY;
-  const mouseX = event.clientX
 
-  if (mouseY <= 50 || mouseX <= 50) {
-    handleMouseEnter();
-  } else {
-    handleMouseLeave();
+
+function onlyDesktop() {
+  const desktopSize = window.matchMedia('(min-width: 1024px)').matches; 
+  
+  if (desktopSize) {
+    const eyeContainer = document.getElementById('eyeContainer');
+
+    eyeContainer.addEventListener('mousemove', function(event) {
+      const mouseY = event.clientY;
+      const mouseX = event.clientX
+    
+      if (mouseY <= 250 && mouseX <= 250) {
+        handleMouseEnter();
+      } else {
+        handleMouseLeave();
+      }
+    });
   }
-});
+}
+
+onlyDesktop();
