@@ -15,6 +15,14 @@ function handleMouseLeave() {
   images[1].style.opacity = 0;
 }
 
-// Listen for house enter and leaving
-eyeContainer.addEventListener('mouseenter', handleMouseEnter);
-eyeContainer.addEventListener('mouseleave', handleMouseLeave);
+// Attach event listeners to the eyeContainer
+eyeContainer.addEventListener('mousemove', function(event) {
+  const mouseY = event.clientY;
+  const mouseX = event.clientX
+
+  if (mouseY <= 50 || mouseX <= 50) {
+    handleMouseEnter();
+  } else {
+    handleMouseLeave();
+  }
+});
