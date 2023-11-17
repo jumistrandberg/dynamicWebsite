@@ -1,95 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    border: 3px solid red;
-    background: black;
-    background-image: url("../imgs/lines-background-min.png");
-    background-size: 30%;
-    background-repeat: repeat;
-    
+  overflow: hidden;
+  background: black;
+  /* background-image: url("../imgs/lines-background-min.png"); */
+  background-size: 30%;
+  background-repeat: repeat;
+  color: white;
+}
+
+h1 {
+  display: none;
 }
 
 .blob {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Makes the shape circular */
-    background: radial-gradient(circle, white 30%, transparent 70%);
-  }
-  
+  padding-left: 6%;
+  border-radius: 50%; 
+  background: radial-gradient(circle, white 10%, transparent 60%);
+}
 
+/* Eye Stuff Section  */
 .eye-container {
-    position: absolute;
-    width: 50vw;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
-.eye-animation{ 
-    opacity: 0;
-    transition: fade ease-in-out;
-    width: 100%;
-    animation: eyeAnimation 9s infinite ;
-}
-
-
+.eye-animation {
+  opacity: 0;
+  transition: fade ease-in-out;
+  width: 100%;
+  animation: eyeAnimation 9s infinite;
+} 
 
 @keyframes eyeAnimation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-
 .eye-container img {
+  width: 100%;
+  position: absolute;
+}
+
+/* Main */
+main {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.guy-container {
+  width: 100vw;
+  height: auto;
+}
+
+.guy-container img {
+  width: 110%;
+  animation: guyBreath 2s infinite;
+}
+
+@keyframes guyBreath {
+  0%, 100% {
+    opacity: 0.9;
+    padding-right: 1%;
     width: 100%;
-    position: absolute;
+    height: 99%;
+  }
+
+  50% {
+    opacity: 1;
+    padding-left: 1%;
+    width: 99%;
+    height: 100%;
+  }
+}
+
+.dialog-container {
+  border: 1px solid blue;
+  height: 55%;
+  width: 100%;
+  text-align: center;
 }
 
 /* Small Desktop Media Query */
 @media (min-width: 1024px) {
-
-    .eye-container {
-        width: 20vw;
-    
-    }
-
-    .eye-animation{ 
-        transition: fade ease-in-out;
-        width: 100%;
-        animation: none ;
-    }
-    
- 
-    
-    .eye-container img:nth-child(1){
-        opacity: 1;
-    }
-    
-    .eye-container img:nth-child(2){
-        opacity: 0;
-    }
-    
-    .eye-container:hover img:nth-child(1){
-        opacity: 0;
-    }
-    
-    .eye-container:hover img:nth-child(2){
-        opacity: 1;
-    }
+  .eye-container {
+    top: -9%;
+    left: -1%;
+    width: 50vw;
+    height: 50vh;
   }
+
+  .eye-container img {
+  transform: rotate(-14deg);
+   height: 110%;
+   width: 100%;
+  }
+
+  .eye-animation {
+    animation: none;
+  }
+
+ /* .eye-container img:nth-child(1) {
+    opacity: 1;
+  }
+
+  .eye-container img:nth-child(2) {
+    opacity: 0;
+  }
+
+  .eye-container:hover img:nth-child(1) {
+    opacity: 0;
+  }
+
+  .eye-container:hover img:nth-child(2) {
+    opacity: 1;
+  } */
+}
