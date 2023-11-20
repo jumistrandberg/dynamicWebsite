@@ -1,12 +1,15 @@
+// Get and define the eyeContainer div
+const eyeContainer = document.getElementById("eyeContainer");
+
 // Show open eyes img on mouse hover
-function handleMouseEnter() {
+function mouseEnter() {
   const images = eyeContainer.querySelectorAll("img");
   images[0].style.opacity = 0;
   images[1].style.opacity = 1;
 }
 
 // Hide open eyes img on mouse leave
-function handleMouseLeave() {
+function mouseLeave() {
   const images = eyeContainer.querySelectorAll("img");
   images[0].style.opacity = 1;
   images[1].style.opacity = 0;
@@ -15,16 +18,15 @@ function handleMouseLeave() {
 
 // Listen for correct mouse position and call functions 
 function activateHover() {
-  const eyeContainer = document.getElementById("eyeContainer");
 
-  function handleMouseMove(event) {
+  function mouseMove(event) {
     const mouseY = event.clientY;
     const mouseX = event.clientX;
 
     if (mouseY <= 250 && mouseX <= 250) {
-      handleMouseEnter();
+      mouseEnter();
     } else {
-      handleMouseLeave();
+      mouseLeave();
     }
   }
 
@@ -32,18 +34,18 @@ function activateHover() {
   const desktopQuery = window.matchMedia("(min-width: 1024px)");
 
   // only do if window size is right
-  function handleViewportChange() {
+  function viewportChange() {
     if (desktopQuery.matches) {
-      eyeContainer.addEventListener("mousemove", handleMouseMove);
+      eyeContainer.addEventListener("mousemove", mouseMove);
     } else {
-      eyeContainer.removeEventListener("mousemove", handleMouseMove);
-      handleMouseLeave(); 
+      eyeContainer.removeEventListener("mousemove", mouseMove);
+      mouseLeave(); 
     }
   }
 
-  handleViewportChange(); 
+viewportChange(); 
 
-  desktopQuery.addListener(activateHover); 
+window.addEventListener('resize', viewportChange);
 }
 
 activateHover();
