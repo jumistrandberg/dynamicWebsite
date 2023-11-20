@@ -5,7 +5,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background: black;
   background-image: url("../imgs/lines-background-min.png");
   background-size: 30%;
@@ -34,7 +34,9 @@ body {
 }
 
 /* Main */
-
+.dove-img {
+  width: 100%;
+}
 /* Small Desktop Media Query */
 @media (min-width: 1024px) {
   .eye-container {
