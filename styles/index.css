@@ -11,14 +11,20 @@ body {
   background-size: 30%;
   background-repeat: repeat;
   color: white;
+ 
+}
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Eye Stuff Section  */
 .eye-container {
-  position: absolute;
-  width: 120vw;
-  top: -1%;
-  left: -17%;
+  /* position: relative; */
+  /* width: 120vw;
+  top: 20%;
+  left: -17%; */
 }
 
 .eye-animation {
@@ -29,7 +35,9 @@ body {
 } 
 
 .eye-container img {
-  width: 100%;
+  width: 120%;
+  top: 7%;
+  left: -15%;
   position: absolute;
 }
 
