@@ -1,8 +1,7 @@
 nav {
-    border: 1px solid hotpink;
-    padding: 5%;
     background: white;
-    z-index: 1;
+    text-transform: lowercase;
+    letter-spacing: 0.2rem;
 
 }
 nav ul {
@@ -10,8 +9,23 @@ nav ul {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+
+}
+
+nav ul li {
+    padding: 5%;
+
 }
 
 nav ul li a {
     text-decoration: none;
+    color: black;
+}
+
+.active-nav {
+background-color: transparent;
+  /* background-image: url(/imgs/nav-flower-min.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
