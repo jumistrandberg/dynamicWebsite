@@ -7,28 +7,18 @@
 body {
   overflow: hidden;
   background: black;
-  /* background-image: url("../imgs/lines-background-min.png"); */
+  background-image: url("../imgs/lines-background-min.png");
   background-size: 30%;
   background-repeat: repeat;
   color: white;
 }
 
-h1 {
-  display: none;
-}
-
-.blob {
-  padding-left: 6%;
-  border-radius: 50%; 
-  background: radial-gradient(circle, white 10%, transparent 60%);
-}
-
 /* Eye Stuff Section  */
 .eye-container {
   position: absolute;
-  width: 100vw;
-  top: 0;
-  left: 0;
+  width: 120vw;
+  top: -1%;
+  left: -17%;
 }
 
 .eye-animation {
@@ -37,24 +27,6 @@ h1 {
   width: 100%;
   animation: eyeAnimation 9s infinite;
 } 
-
-@keyframes eyeAnimation {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .eye-container img {
   width: 100%;
@@ -82,19 +54,4 @@ h1 {
     animation: none;
   }
 
- /* .eye-container img:nth-child(1) {
-    opacity: 1;
-  }
-
-  .eye-container img:nth-child(2) {
-    opacity: 0;
-  }
-
-  .eye-container:hover img:nth-child(1) {
-    opacity: 0;
-  }
-
-  .eye-container:hover img:nth-child(2) {
-    opacity: 1;
-  } */
 }
