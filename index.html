@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumi Strandberg</title>
     <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles/keyframes.css">
+    <link rel="stylesheet" href="styles/nav.css">
+  </head>
+  <body>
     <header>
-        <h1>Jumiland</h1>
-        <div class="eye-container" id="eyeContainer">
-            <img src="imgs/closed-eyes.png" alt="Image of white lines">
-            <img class="eye-animation" src="imgs/open-eyes.png" alt="Image of illustrated eyes">
-        </div>
+      <div class="eye-container" id="eyeContainer">
+        <img src="imgs/closed-eyes.png" alt="Image of white lines" />
+        <img
+          class="eye-animation"
+          src="imgs/open-eyes.png"
+          alt="Image of illustrated eyes"
+        />
+      </div>
+      <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+      </nav>
+    
     </header>
 
     <main>
-      
-    
+      <div class="main-intro-container">
+        <div class="intro-text">
+          <h2>Welcome to Jumiland. <br>I'm</h2>
+          <h1>Jumi Strandberg</h1>
+          <h2>
+            a web witch apprenctice, dabbling in the sacred arts of fullstack
+            MERN development.
+          </h2>
+        </div>
 
+        <img
+        class="dove-img"
+        src="imgs/dove-two-eyes-min.png"
+        alt="illustration of dove with a human eye."
+      />
+      </div>
     </main>
 
     <script src="scripts/eyeHover.js"></script>
-</body>
+  </body>
 </html>
