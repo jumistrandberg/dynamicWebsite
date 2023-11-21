@@ -1,0 +1,60 @@
+/* Small Desktop Media Query */
+@media (min-width: 1024px) {
+  body {
+    background-size: 10%;
+  }
+
+  .eye-animation {
+    animation: none;
+  }
+
+  .eye-container img {
+     display: none;
+  }
+
+  .intro-text {
+    margin: 10% auto;
+  }
+
+  .intro-text h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+
+  .intro-text h2 {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+
+  .dove-img {
+    position: relative;
+    margin-top: -50vh;
+    left: 50%;
+    width: 50%;
+  }
+
+  nav {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 2.5rem 5% 0;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  nav ul li a {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    opacity: 0.5;
+
+  }
+
+  .active-nav {
+    opacity: 1;
+  }
+}

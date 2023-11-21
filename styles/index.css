@@ -82,23 +82,4 @@ header {
 }
 
 
-/* Small Desktop Media Query */
-@media (min-width: 1024px) {
-  .eye-container {
-    top: -9%;
-    left: -1%;
-    width: 50vw;
-    height: 50vh;
-  }
 
-  .eye-container img {
-  transform: rotate(-14deg);
-   height: 110%;
-   width: 100%;
-  }
-
-  .eye-animation {
-    animation: none;
-  }
-
-}
