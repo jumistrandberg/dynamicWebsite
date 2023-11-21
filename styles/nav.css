@@ -5,14 +5,13 @@ nav {
     text-transform: lowercase;
     letter-spacing: 0.2rem;
     position: fixed;
-    top: 0;
+    /* top: 0; */
     left: 0;
     margin: 20vh 0;
     padding-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 
 nav ul {
@@ -28,6 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     color: white;
     writing-mode: vertical-lr;

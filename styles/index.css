@@ -5,40 +5,41 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background: black;
   background-image: url("../imgs/lines-background-min.png");
   background-size: 30%;
   background-repeat: repeat;
   color: white;
   font-family: 'Montserrat', sans-serif;
- 
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* Eye Stuff Section  */
 .eye-container {
-  /* position: relative; */
-  /* width: 120vw;
-  top: 20%;
-  left: -17%; */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .eye-animation {
   opacity: 0;
   transition: fade ease-in-out;
-  width: 100%;
   animation: eyeAnimation 9s infinite;
 } 
 
 .eye-container img {
-  width: 120%;
-  /* top: 7%; */
+  max-width: 100%;
+  transform: scale(1.2) translateX(-5%);
+  transform-origin: top left;
+  height: auto;
+  display: block;
   left: -15%;
   position: absolute;
 }
@@ -63,6 +64,13 @@ header {
   font-size: 1.2rem;
   margin: 5px 0;
   font-weight: 200;
+}
+
+.main-intro-container {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 150%;
+  margin: 0;
 }
 
 .dove-img {
