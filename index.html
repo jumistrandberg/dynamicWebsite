@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/desktop.css">
   </head>
   <body>
     <header>
@@ -27,7 +28,7 @@
       </div>
       <nav>
         <ul>
-          <li><a class="active-nav" href="index.html">Home</a></li>
+          <li><a class="active-nav" href="#home">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Contact</a></li>
@@ -36,24 +37,35 @@
     </header>
 
     <main>
-      <div class="main-intro-container">
-        <div class="intro-text">
-          <h2>Welcome to Jumiland. <br />I'm</h2>
-          <h1>Jumi Strandberg</h1>
-          <h2>
-            a web witch apprenctice, dabbling in the sacred arts of fullstack JavaScript
-            MERN development.
-          </h2>
+        <div id="home">
+            <div class="main-intro-container">
+                <div class="intro-text">
+                  <h2>Welcome to Jumiland. <br />I'm</h2>
+                  <h1>Jumi Strandberg</h1>
+                  <h2>
+                    a web witch apprenctice, dabbling in the sacred arts of fullstack JavaScript
+                    development.
+                  </h2>
+                </div>
+        
+                <img
+                  class="dove-img"
+                  src="imgs/dove-two-eyes-min.png"
+                  alt="illustration of dove with a human eye."
+                />
+              </div>
         </div>
 
-        <img
-          class="dove-img"
-          src="imgs/dove-two-eyes-min.png"
-          alt="illustration of dove with a human eye."
-        />
-      </div>
+        <div id="about">
+          <h2>Me and My Adventures</h2>
+
+          <div id="cv-container"></div>
+        </div>
+     
     </main>
 
-    <script src="scripts/eyeHover.js"></script>
+    <!-- <script src="scripts/eyeHover.js"></script> -->
+    <!-- fetch JSON script  -->
+    <script src="scripts/resume.js"></script>
   </body>
 </html>

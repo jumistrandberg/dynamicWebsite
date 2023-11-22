@@ -23,7 +23,7 @@ function activateHover() {
     const mouseY = event.clientY;
     const mouseX = event.clientX;
 
-    if (mouseY <= 250 && mouseX <= 250) {
+    if (mouseY <= 250) {
       mouseEnter();
     } else {
       mouseLeave();
