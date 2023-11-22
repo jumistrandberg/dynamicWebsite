@@ -27,8 +27,9 @@
   }
 
   .dove-img {
-    position: relative;
-    margin-top: -50vh;
+    position: absolute;
+    margin-bottom: -15%;
+    bottom: 0;
     left: 50%;
     width: 50%;
   }
