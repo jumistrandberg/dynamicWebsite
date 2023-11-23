@@ -26,6 +26,10 @@
   letter-spacing: 0.2rem;
 }
 
+#cv-container p {
+  margin-bottom: 12%;
+}
+
 #cv-container ul li {
   min-height: 5rem;
   list-style-type: none;
