@@ -1,0 +1,42 @@
+#about {
+}
+
+.flower-bg {
+  background-image: url("../imgs/nav-eyes-min.png");
+  background-repeat: repeat;
+  background-size: 10%;
+}
+#cv-container {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  padding: 10%;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+#cv-container > * {
+  border: 1px solid yellow;
+  margin: 2% 0;
+}
+
+#cv-container img {
+  width: 10%;
+  height: auto;
+}
+
+#cv-container ul {
+  border: 1px solid pink;
+}
+
+#cv-container ul li {
+  list-style-type: none;
+  border: 1px solid purple;
+  margin-bottom: 10%;
+}
+
+#cv-container ul li {
+  list-style-type: none;
+  margin-bottom: 10%;
+}

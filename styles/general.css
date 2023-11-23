@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background: black;
+    background-image: url("../imgs/lines-background-min.png");
+    background-size: 30%;
+    background-repeat: repeat;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  

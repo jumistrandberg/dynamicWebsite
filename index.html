@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumi Strandberg</title>
     <!-- General styles for whole page  -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles/general.css">
     <!-- Home style  -->
     <link rel="stylesheet" href="./styles/home.css" />
     <!-- About style  -->
-    <link rel="stylesheet" href="./styles/cv.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <!-- Animations  -->
     <link rel="stylesheet" href="./styles/keyframes.css" />
     <!-- Navigation style  -->
@@ -28,10 +28,10 @@
   <body>
     <header>
       <div class="eye-container" id="eyeContainer">
-        <img src="imgs/closed-eyes.png" alt="Image of white lines" />
+        <img src="./imgs/closed-eyes.png" alt="Image of white lines" />
         <img
           class="eye-animation"
-          src="imgs/open-eyes.png"
+          src="./imgs/open-eyes.png"
           alt="Image of illustrated eyes"
         />
       </div>
@@ -59,21 +59,25 @@
         
                 <img
                   class="dove-img"
-                  src="imgs/dove-two-eyes-min.png"
+                  src="./imgs/dove-two-eyes-min.png"
                   alt="illustration of dove with a human eye."
                 />
               </div>
         </div>
 
         <section id="about" class="nav-section">
-          <div id="cv-container"></div>
+          <div class="flower-bg">
+            <div id="cv-container"></div>
+          </div>
+         
         </section>
      
     </main>
 
     <!-- <script src="scripts/eyeHover.js"></script> -->
     <!-- fetch JSON script  -->
-    <script src="scripts/resume.js"></script>
-    <script src="scripts/active-nav.js"></script>
+    <script src="./scripts/resume.js"></script>
+    <!-- Active nav script  -->
+    <script src="./scripts/active-nav.js"></script>
   </body>
 </html>
