@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumi Strandberg</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <!-- Home style  -->
+    <link rel="stylesheet" href="styles/home.css" />
+    <!-- About style  -->
+    <link rel="stylesheet" href="styles/cv.css">
+    <!-- Animations  -->
     <link rel="stylesheet" href="styles/keyframes.css" />
+    <!-- Navigation style  -->
     <link rel="stylesheet" href="styles/nav.css" />
     <!-- google font Montserrat  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,10 +33,10 @@
       </div>
       <nav>
         <ul>
-          <li><a class="active-nav" href="#home">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
+          <li class="nav-li"><a class="active-nav" href="#home">Home</a></li>
+          <li class="nav-li"><a href="#about">About</a></li>
+          <li class="nav-li"><a href="">Projects</a></li>
+          <li class="nav-li"><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -57,8 +62,6 @@
         </div>
 
         <div id="about">
-          <h2>Me and My Adventures</h2>
-
           <div id="cv-container"></div>
         </div>
      
@@ -67,5 +70,6 @@
     <!-- <script src="scripts/eyeHover.js"></script> -->
     <!-- fetch JSON script  -->
     <script src="scripts/resume.js"></script>
+    <script src="scripts/active-nav.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+// Script by me
 // Get and define the eyeContainer div
 const eyeContainer = document.getElementById("eyeContainer");
 

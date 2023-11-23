@@ -1,3 +1,4 @@
+// Script by me
 // Create variable for the container div declared in the index.html
 const cvContainer = document.getElementById('cv-container');
 
