@@ -2,11 +2,6 @@
   background: linear-gradient(to bottom, #8eaecd00, #3630629e); 
 }
 
-.flower-bg {
-  background-image: url("fuckthis");
-  background-repeat: no-repeat;
-  background-size: 50%;
-}
 #cv-container {
   display: flex;
   flex-direction: column;
@@ -42,4 +37,16 @@
 #cv-container ul li {
   list-style-type: none;
   margin-bottom: 10%;
+}
+
+#cv-container ul li p {
+  margin: 2%;
+}
+
+#cv-container ul li p:first-child {
+  font-size: 1.2rem;
+}
+
+#cv-container ul li p:nth-child(3) {
+  font-style: italic;
 }
