@@ -1,13 +1,13 @@
 #about {
+  background: linear-gradient(to bottom, #8eaecd00, #3630629e); 
 }
 
 .flower-bg {
-  background-image: url("../imgs/nav-eyes-min.png");
-  background-repeat: repeat;
-  background-size: 10%;
+  background-image: url("fuckthis");
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 #cv-container {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
@@ -17,23 +17,22 @@
 }
 
 #cv-container > * {
-  border: 1px solid yellow;
   margin: 2% 0;
 }
 
-#cv-container img {
-  width: 10%;
-  height: auto;
-}
-
-#cv-container ul {
-  border: 1px solid pink;
+#cv-container h2, #cv-container h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
 }
 
 #cv-container ul li {
+  min-height: 5rem;
   list-style-type: none;
-  border: 1px solid purple;
   margin-bottom: 10%;
+  padding: 0 5% 2%;
+  border-top: 1px solid white;
+
 }
 
 #cv-container ul li {
