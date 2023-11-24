@@ -1,0 +1,39 @@
+/* From Desktop Media Query breakpoint*/
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  .intro-text {
+    margin: 10% auto;
+  }
+
+  .intro-text h2 {
+    padding: 0 20%;
+  }
+
+  /* About section  */
+  #cv-container {
+    margin: 0;
+  }
+
+  /* Projects Section  */
+  #projects {
+    margin: 1rem;
+  }
+
+  /* About Section  */
+  #contact {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #contact article div {
+    margin-top: 5%;
+  }
+
+  /* Footer Section  */
+
+  footer a {
+    font-size: 2rem;
+  }
+}

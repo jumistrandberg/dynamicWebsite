@@ -1,7 +1,9 @@
-/* From small Desktop Media Query breakpoint*/
+/* From smaller Desktop Media Query breakpoint*/
 @media (min-width: 769px) {
   body {
     background-size: 10%;
+    font-size: 1.5rem;
+
   }
 
   /* Hero  */
