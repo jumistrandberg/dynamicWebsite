@@ -47,9 +47,3 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  #projects h2 {
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 0.2rem;
-  }
