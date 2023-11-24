@@ -1,4 +1,4 @@
-/* Small Desktop Media Query */
+/* From small Desktop Media Query breakpoint*/
 @media (min-width: 1024px) {
   body {
     background-size: 10%;
