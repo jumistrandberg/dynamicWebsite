@@ -29,6 +29,7 @@
   </head>
   <body>
     <header>
+      <!-- Eye decoration  -->
       <div class="eye-container" id="eyeContainer">
         <img src="./imgs/closed-eyes.png" alt="Image of white lines" />
         <img
@@ -37,19 +38,22 @@
           alt="Image of illustrated eyes"
         />
       </div>
+
+      <!-- Navigation  -->
       <nav>
         <ul>
           <li class="nav-li"><a class="active-nav" href="#home">Home</a></li>
           <li class="nav-li"><a href="#about">About</a></li>
           <li class="nav-li"><a href="#projects">Projects</a></li>
-          <li class="nav-li"><a href="">Contact</a></li>
+          <li class="nav-li"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Hero -->
     <main>
         <section id="home">
-            <div class="main-intro-container">
+            <article class="main-intro-container">
                 <div class="intro-text">
                   <h2>Welcome to Jumiland. <br />I'm</h2>
                   <h1>Jumi Strandberg</h1>
@@ -65,23 +69,27 @@
                   alt="illustration of dove with a human eye."
                 />
               </div>
-        </div>
+        </article>
 
+        <!-- The about CV section  -->
         <section id="about">
-            <div id="cv-container"></div>
+            <article id="cv-container"></article>
         </section>
 
+        <!-- The projects Github repo section  -->
         <section id="projects">
           <h2>My Github Projects</h2>
           <p>Click on the cards to be redirected to the projects</p>
           <div class="github-cards">
             
+            <!-- The Rock Paper Scissors Repo  -->
             <a href="https://github.com/jumistrandberg/rockPaperScissor.git" class="github-card" data-github="rock-paper-scissor"
               <h3 class="github-card-title">Rock Paper Scissors</h3>
               <p>Rock Paper Scissors game created for Chas Code</p>
               <span class="github-card__meta">
               <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
               </span>
+              <!-- Don't need the star and fork now because I have none on my repos. Might add later when I'm super famous  -->
               <!-- <span class="github-card__meta">
                 <i class="fa-regular fa-star" aria-hidden="true"></i>
               </span>
@@ -93,7 +101,7 @@
               </span> -->
             </a>
 
-
+          <!-- The number guessing repo  -->
           <a href="https://github.com/jumistrandberg/numberGuess.git" class="github-card" data-github="rock-paper-scissor"
           <h3>Number Guess</h3>
           <p>Simple number guessing game created for Chas Code Jam</p>
@@ -102,6 +110,7 @@
           </span>
         </a>
 
+        <!-- The weather app repo  -->
         <a href="https://github.com/jumistrandberg/weatherApp.git" class="github-card" data-github="rock-paper-scissor"
         <h3>Weather App</h3>
         <p>Simple Weather App project to learn working with APIs</p>
@@ -111,6 +120,21 @@
       </a>
           
           </div>
+        </section>
+
+        <!-- The contact section  -->
+        <section id="contact">
+          <h2>Let's Talk</h2>
+          <article>
+            <div>
+                <p>Email:</p>
+                <p>jumi.strandberg@chasacademy.se</p>
+            </div>
+            <div>
+                <p>Phone:</p>
+                <p>+46 79 356 59 96</p>
+            </div>
+        </article>
         </section>
      
     </main>
@@ -123,6 +147,7 @@
     <!-- Get GitHub repos script  -->
     <script src="./scripts/github-cards.js"></script>
     <!-- Font Awesome Kit  -->
-    <script src="https://kit.fontawesome.com/6c6af90e8e.js" crossorigin="anonymous"></script>
+    <!-- Don't need until I want to add stars and forks to github cards  -->
+    <!-- <script src="https://kit.fontawesome.com/6c6af90e8e.js" crossorigin="anonymous"></script> -->
   </body>
 </html>
