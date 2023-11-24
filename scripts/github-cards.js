@@ -19,5 +19,6 @@ $("[data-github]").each(function () {
     .then(function (response) {
       $(_this).find("[data-forks]").text(response.forks);
       $(_this).find("[data-stars]").text(response.stargazers_count);
+
     });
 });

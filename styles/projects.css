@@ -1,5 +1,3 @@
-
-
 /* ChatGPT rewrote the SASS to CSS */
 /* Variables */
 :root {
@@ -42,5 +40,16 @@
   .github-card__meta {
     margin-right: var(--spacing);
   }
+
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
-  
+  #projects h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+  }
