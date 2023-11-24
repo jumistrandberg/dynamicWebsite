@@ -97,4 +97,25 @@
   .github-card {
     font-size: 1rem;
   }
+
+  /* Contact Section  */
+  #contact article {
+    display: flex;
+  }
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact article {
+    height: 100%;
+  }
+  
+  /* #contact article img {
+    position: fixed;
+    margin-left: 50%;
+    bottom: 0;
+    width: 30rem;
+    height: 20rem;
+  } */
 }

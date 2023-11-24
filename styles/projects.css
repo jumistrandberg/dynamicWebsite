@@ -28,9 +28,9 @@
     min-width: 250px;
   }
   
-  .github-card > h3 {
+  .github-card-title {
     margin-top: 0;
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   .github-card p {

@@ -53,3 +53,15 @@ footer a {
   text-decoration: none;
 }
 
+.guy-img {
+    position: fixed;
+    margin-left: 50%;
+    bottom: 0;
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .hidden {
+    display: none;
+}
+

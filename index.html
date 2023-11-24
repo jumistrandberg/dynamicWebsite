@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jumi Strandberg</title>
     <!-- General styles for whole page  -->
@@ -63,15 +63,15 @@
                     a web witch apprenctice, dabbling in the sacred arts of fullstack JavaScript
                     development.
                   </h2>
-                </section>
+                </div>
         
                 <img
                   class="dove-img"
                   src="./imgs/dove-two-eyes-min.png"
                   alt="illustration of dove with a human eye."
                 />
-              </div>
         </article>
+      </section>
 
         <!-- The about CV section  -->
         <section id="about">
@@ -85,8 +85,8 @@
           <div class="github-cards">
             
             <!-- The Rock Paper Scissors Repo  -->
-            <a href="https://github.com/jumistrandberg/rockPaperScissor.git" class="github-card" data-github="rock-paper-scissor"
-              <h3 class="github-card-title">Rock Paper Scissors</h3>
+            <a href="https://github.com/jumistrandberg/rockPaperScissor.git" class="github-card" data-github="rock-paper-scissor">
+              <p class="github-card-title"> Rock Paper Scissors</p>
               <p>Rock Paper Scissors game created for Chas Code</p>
               <span class="github-card__meta">
               <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
@@ -104,8 +104,8 @@
             </a>
 
           <!-- The number guessing repo  -->
-          <a href="https://github.com/jumistrandberg/numberGuess.git" class="github-card" data-github="rock-paper-scissor"
-          <h3>Number Guess</h3>
+          <a href="https://github.com/jumistrandberg/numberGuess.git" class="github-card" data-github="rock-paper-scissor">
+          <p class="github-card-title">Number Guess</p>
           <p>Simple number guessing game created for Chas Code Jam</p>
           <span class="github-card__meta">
           <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
@@ -113,8 +113,8 @@
         </a>
 
         <!-- The weather app repo  -->
-        <a href="https://github.com/jumistrandberg/weatherApp.git" class="github-card" data-github="rock-paper-scissor"
-        <h3>Weather App</h3>
+        <a href="https://github.com/jumistrandberg/weatherApp.git" class="github-card" data-github="rock-paper-scissor">
+        <p class="github-card-title">Weather App</p>
         <p>Simple Weather App project to learn working with APIs</p>
         <span class="github-card__meta">
         <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
@@ -128,6 +128,7 @@
         <section id="contact">
           <h2>Let's Talk</h2>
           <article>
+            <div class="contact-info-container">
             <div>
                 <p>Email:</p>
                 <p>jumi.strandberg@chasacademy.se</p>
@@ -136,25 +137,28 @@
                 <p>Phone:</p>
                 <p>+46 79 356 59 96</p>
             </div>
+          </div>
         </article>
         </section>
      
     </main>
 
     <footer>
-  
       <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/e-f-jumi-strandberg-7866721a5/" aria-label="LinkedIn"></a>
       <a class="fa-regular fa-envelope" href="mailto:jumi.strandbers@chasacademy.se" aria-label="Email"></a>
       <a class="fa-brands fa-github" href="https://github.com/jumistrandberg" aria-label="Github"></a>
     </footer>
 
     <!-- <script src="scripts/eyeHover.js"></script> -->
+    <script src="./scripts/eyeHover.js"></script>
     <!-- fetch JSON script  -->
     <script src="./scripts/resume.js"></script>
     <!-- Active nav script  -->
     <script src="./scripts/active-nav.js"></script>
     <!-- Get GitHub repos script  -->
     <script src="./scripts/github-cards.js"></script>
+    <!-- Show little guy img script  -->
+    <script src="./scripts/guy-show.js"></script>
     <!-- Font Awesome Kit  -->
     <script src="https://kit.fontawesome.com/6c6af90e8e.js" crossorigin="anonymous"></script>
   </body>
