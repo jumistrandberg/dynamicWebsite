@@ -34,7 +34,7 @@ function displayCvItems(cvData) {
 
   cvData.education.forEach(function (eduItem) {
     const liItem = document.createElement("li");
-
+    
     const eduNameP = document.createElement("p");
     eduNameP.textContent = eduItem.eduName;
 
@@ -60,7 +60,7 @@ function displayCvItems(cvData) {
 
   // Create list to contain work items
   const workList = document.createElement("ul");
-
+  // Loop through all work data items and make them li elements
   cvData.work.forEach(function (workItem) {
     const liItem = document.createElement("li");
     const titleP = document.createElement('p');
