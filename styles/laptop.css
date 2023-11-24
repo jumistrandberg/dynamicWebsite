@@ -1,0 +1,97 @@
+/* From small Desktop Media Query breakpoint*/
+@media (min-width: 769px) {
+  body {
+    background-size: 10%;
+  }
+
+  /* Hero  */
+  .eye-animation {
+    animation: none;
+  }
+
+  .eye-container img {
+     display: none;
+  }
+
+  .intro-text {
+    margin: 20% auto;
+  }
+
+  .intro-text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .intro-text h2 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .dove-img {
+    position: relative;
+    margin-top: -30vh;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    animation: doveBobbing 3s ease-in-out infinite;
+  }
+
+  /* Navigation */
+  nav {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 2.5rem 5% 0;
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  nav ul li a {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    opacity: 0.5;
+
+  }
+
+  .active-nav {
+    opacity: 1;
+  }
+
+  /* About section  */
+  #cv-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bigger-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bigger-container div {
+    flex: 1;
+  }
+
+  .bigger-container div:nth-child(2) {
+    margin-top: 10%;
+  }
+
+  /* Projects Section  */
+  #projects p {
+    margin-top: 1rem;
+  }
+
+  .github-cards {
+    margin: 5%;
+  }
+
+  .github-card {
+    font-size: 1rem;
+  }
+}
