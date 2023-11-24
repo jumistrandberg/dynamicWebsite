@@ -23,7 +23,7 @@
   }
 
   .intro-text h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
   }
 
@@ -80,5 +80,18 @@
 
   .bigger-container div:nth-child(2) {
     margin-top: 10%;
+  }
+
+  /* Projects Section  */
+  #projects p {
+    margin-top: 1rem;
+  }
+  
+  .github-cards {
+    margin: 5%;
+  }
+
+  .github-card {
+    font-size: 1rem;
   }
 }

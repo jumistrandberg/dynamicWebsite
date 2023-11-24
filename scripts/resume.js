@@ -13,6 +13,7 @@ async function getCv() {
     cvContainer.innerText = "Error loading content";
   }
 }
+
 function displayCvItems(cvData) {
   // Show my name
   const nameTitle = document.createElement("h2");
@@ -27,14 +28,25 @@ function displayCvItems(cvData) {
   // Add edu title
   const eduTitle = document.createElement("h3");
   eduTitle.textContent = "Education";
-  cvContainer.appendChild(eduTitle);
 
   // Create list to contain education items
   const eduList = document.createElement("ul");
 
+  // Create edu div to place for desktop
+  const eduDiv = document.createElement("div");
+
+  // Create work div to place for desktop
+  const workDiv = document.createElement("div");
+
+  // Create container div for both edu and work divs
+  const divContainer = document.createElement("div");
+
+  // Add class to container 
+  divContainer.classList.add('bigger-container');
+
   cvData.education.forEach(function (eduItem) {
     const liItem = document.createElement("li");
-    
+
     const eduNameP = document.createElement("p");
     eduNameP.textContent = eduItem.eduName;
 
@@ -50,26 +62,35 @@ function displayCvItems(cvData) {
 
     eduList.appendChild(liItem);
   });
+
+  // Append the title
+  eduDiv.appendChild(eduTitle);
+
+  // Place in the div
+  eduDiv.appendChild(eduList);
+
+  // Place in container div
+  divContainer.appendChild(eduDiv);
+
   // Append to container div
-  cvContainer.appendChild(eduList);
+  cvContainer.appendChild(divContainer);
 
   // Add work title
   const workTitle = document.createElement("h3");
   workTitle.textContent = "Work Experience";
-  cvContainer.appendChild(workTitle);
 
   // Create list to contain work items
   const workList = document.createElement("ul");
   // Loop through all work data items and make them li elements
   cvData.work.forEach(function (workItem) {
     const liItem = document.createElement("li");
-    const titleP = document.createElement('p');
+    const titleP = document.createElement("p");
     titleP.textContent = workItem.title;
 
-    const dateP = document.createElement('p');
+    const dateP = document.createElement("p");
     dateP.textContent = workItem.date;
 
-    const companyP = document.createElement('p');
+    const companyP = document.createElement("p");
     companyP.textContent = workItem.company;
 
     liItem.appendChild(titleP);
@@ -78,8 +99,18 @@ function displayCvItems(cvData) {
 
     workList.appendChild(liItem);
   });
+
+  // Append the title
+  workDiv.appendChild(workTitle);
+
+  // Place in the div
+  workDiv.appendChild(workList);
+
+  // Place in container div
+  divContainer.appendChild(workDiv);
+
   // Append to container div
-  cvContainer.appendChild(workList);
+  cvContainer.appendChild(divContainer);
 }
 
 // Call function
