@@ -3,6 +3,8 @@
   body {
     font-size: 1.8rem;
   }
+
+  /* Hero  */
   .intro-text {
     margin: 10% auto;
   }
@@ -10,6 +12,11 @@
   .intro-text h2 {
     padding: 0 20%;
   }
+
+  .eye-container img {
+    display: inline;
+    top: -10%;
+ }
 
   /* About section  */
   #cv-container {

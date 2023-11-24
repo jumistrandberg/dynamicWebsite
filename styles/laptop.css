@@ -12,7 +12,8 @@
   }
 
   .eye-container img {
-     display: none;
+     display: inline;
+     top: -5%;
   }
 
   .intro-text {
