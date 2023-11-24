@@ -8,15 +8,16 @@
 
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
-$('[data-github]').each(function () {
-    var _this = this;
-    var repo = $(_this).data('github')
+$("[data-github]").each(function () {
+  var _this = this;
+  var repo = $(_this).data("github");
   
-    fetch('https://api.github.com/repos/' + repo).then(function (response) {
+  fetch("https://api.github.com/repos/" + repo)
+    .then(function (response) {
       return response.json();
-    }).then(function (response) {
-      $(_this).find('[data-forks]').text(response.forks);
-      $(_this).find('[data-stars]').text(response.stargazers_count);
+    })
+    .then(function (response) {
+      $(_this).find("[data-forks]").text(response.forks);
+      $(_this).find("[data-stars]").text(response.stargazers_count);
     });
-  });
+});
