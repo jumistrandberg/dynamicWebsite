@@ -19,7 +19,8 @@
     font-weight: 200;
     letter-spacing: 0.2rem;
   }
-  
+
+  /* Contact Section  */
   #contact {
     margin: 10%;
     display: flex;
@@ -34,3 +35,21 @@
     padding: 0.5rem;
     letter-spacing: 0.2rem;
   }
+
+  /* Footer Section  */
+footer {
+  height: 10rem;
+  background: linear-gradient(to bottom, #8eaecd00, #3630629e); 
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  margin: 20% 0 0;
+}
+
+footer a {
+  color: white;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
