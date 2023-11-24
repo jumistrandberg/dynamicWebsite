@@ -32,7 +32,7 @@ function activateHover() {
   }
 
   // Match the media query in the CSS
-  const desktopQuery = window.matchMedia("(min-width: 1024px)");
+  const desktopQuery = window.matchMedia("(min-width: 769px)");
 
   // only do if window size is right
   function viewportChange() {

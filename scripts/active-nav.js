@@ -1,4 +1,4 @@
-// Script by me
+// Script written with the help of mdn web docs and chatGPT
 
 // For click: 
 // Get all the links
