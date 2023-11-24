@@ -70,7 +70,6 @@
   }
 
   .bigger-container {
-    border: 1px solid blue;
     display: flex;
     flex-direction: row;
   }
@@ -79,4 +78,7 @@
     flex: 1;
   }
 
+  .bigger-container div:nth-child(2) {
+    margin-top: 10%;
+  }
 }
