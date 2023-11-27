@@ -40,7 +40,9 @@ function handleIntersect(entries) {
     // Add when intersecting otherwise remove
     entries.forEach(function(entry) {
         // Got this to identify which link from chatGPT 
-        const navLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+        // WHY EERRROORRPROJR
+        const navLink = document.querySelector(`.nav-li a[href="#${entry.target.id}"]`);
+
 
         if(entry.isIntersecting) {
             navLink.classList.add('active-nav');
