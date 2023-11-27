@@ -7,33 +7,36 @@
     <!-- General styles for whole page  -->
     <link rel="stylesheet" href="./styles/general.css">
     <!-- Home style  -->
-    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/home.css">
     <!-- About style  -->
     <link rel="stylesheet" href="./styles/about.css">
     <!-- Projects style  -->
     <link rel="stylesheet" href="./styles/projects.css">
     <!-- Animations  -->
-    <link rel="stylesheet" href="./styles/keyframes.css" />
+    <link rel="stylesheet" href="./styles/keyframes.css">
     <!-- Navigation style  -->
-    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/nav.css">
     <!-- Medium, e.g. laptop style  -->
     <link rel="stylesheet" href="./styles/laptop.css">
     <!-- Desktop Styles  -->
     <link rel="stylesheet" href="./styles/desktop.css">
     <!-- google font Montserrat  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
+    >
+    <!-- Devicons for Github cards  -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   </head>
   <body>
     <header>
       <!-- Eye decoration  -->
       <div class="eye-container" id="eyeContainer">
-        <img src="./imgs/closed-eyes.png" alt="Image of white lines" />
+        <img src="./imgs/closed-eyes.png" alt="Image of white lines">
         <img
           class="eye-animation"
           src="./imgs/open-eyes.png"
@@ -57,7 +60,7 @@
         <section id="home">
             <article class="main-intro-container">
                 <div class="intro-text">
-                  <h2>Welcome to Jumiland. <br />I'm</h2>
+                  <h2>Welcome to Jumiland. <br/>I'm</h2>
                   <h1>Jumi Strandberg</h1>
                   <h2>
                     a web witch apprenctice, dabbling in the sacred arts of fullstack JavaScript
@@ -69,7 +72,7 @@
                   class="dove-img"
                   src="./imgs/dove-two-eyes-min.png"
                   alt="illustration of dove with a human eye."
-                />
+                >
         </article>
       </section>
 
@@ -80,48 +83,25 @@
 
         <!-- The projects Github repo section  -->
         <section id="projects">
-          <h2>My Github Projects</h2>
-          <p>Click on the cards to be redirected to the projects</p>
-          <div class="github-cards">
-            
-            <!-- The Rock Paper Scissors Repo  -->
-            <a href="https://github.com/jumistrandberg/rockPaperScissor.git" class="github-card" data-github="rock-paper-scissor">
-              <p class="github-card-title"> Rock Paper Scissors</p>
-              <p>Rock Paper Scissors game created for Chas Code</p>
-              <span class="github-card__meta">
-              <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
-              </span>
-              <!-- Don't need the star and fork now because I have none on my repos. Might add later when I'm super famous  -->
-              <!-- <span class="github-card__meta">
-                <i class="fa-regular fa-star" aria-hidden="true"></i>
-              </span>
-              <span class="github-card__meta">
-                <i class="fa fa-code-fork" aria-hidden="true"></i>
-                <span data-forks>
-                  <i class="fa fa-spinner" aria-hidden="true"></i>
-                </span>
-              </span> -->
-            </a>
+     
+            <h2>My Github Projects</h2>
+            <section class="intro">
+              <div class="user-info"></div>
+            </section>
+      
+            <section class="repos">
+              <input
+                type="text"
+                class="filter-repos hide"
+                placeholder="Search Projects"
+              />
+              <ul class="repo-list"></ul>
+            </section>
+            <h4>
+              Github project display by courtesy of
+              <a href="https://github.com/2KAbhishek/projects">2KAbhishek X OSS</a>
+            </h4>
 
-          <!-- The number guessing repo  -->
-          <a href="https://github.com/jumistrandberg/numberGuess.git" class="github-card" data-github="rock-paper-scissor">
-          <p class="github-card-title">Number Guess</p>
-          <p>Simple number guessing game created for Chas Code Jam</p>
-          <span class="github-card__meta">
-          <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
-          </span>
-        </a>
-
-        <!-- The weather app repo  -->
-        <a href="https://github.com/jumistrandberg/weatherApp.git" class="github-card" data-github="rock-paper-scissor">
-        <p class="github-card-title">Weather App</p>
-        <p>Simple Weather App project to learn working with APIs</p>
-        <span class="github-card__meta">
-        <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
-        </span>
-      </a>
-          
-          </div>
         </section>
 
         <!-- The contact section  -->
@@ -157,8 +137,6 @@
     <script src="./scripts/active-nav.js"></script>
     <!-- Get GitHub repos script  -->
     <script src="./scripts/github-cards.js"></script>
-    <!-- Show little guy img script  -->
-    <script src="./scripts/guy-show.js"></script>
     <!-- Font Awesome Kit  -->
     <script src="https://kit.fontawesome.com/6c6af90e8e.js" crossorigin="anonymous"></script>
   </body>
