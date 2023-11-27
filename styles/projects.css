@@ -47,6 +47,7 @@
 
 #projects {
     margin: 0 auto;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -154,7 +155,15 @@ input {
     margin: 4px;
     width: 100%;
     text-align: center;
-    color: #3630629e;
+    color: white;
+}
+
+#projects h4 {
+  margin: 4px;
+  width: 100%;
+  text-align: center;
+  color: #3630629e;
+  font-weight: 100;
 }
 
 .repo-list {
@@ -182,12 +191,16 @@ input {
         0 3px 6px #3630629e;
 }
 
+.repo-list li span {
+  color: #363062;
+}
+
 .link-btn {
     padding: 10px 20px;
     background: transparent;
     border-radius: 30px;
     border: 2px solid #3630629e;
-    color: white;
+    color: #363062;
 }
 
 .link-btn:hover {
