@@ -1,5 +1,6 @@
 // Script written with the help of mdn web docs and chatGPT
 
+document.addEventListener('DOMContentLoaded', function() {
 // For click: 
 // Get all the links
 const navLinks = document.querySelectorAll('.nav-li a');
@@ -57,3 +58,7 @@ const observer = new IntersectionObserver(handleIntersect, options);
 navSections.forEach(function(section) {
     observer.observe(section);
 });
+
+
+
+})
