@@ -85,18 +85,6 @@
     margin-top: 10%;
   }
 
-  /* Projects Section  */
-  #projects p {
-    margin-top: 1rem;
-  }
-
-  .github-cards {
-    margin: 5%;
-  }
-
-  .github-card {
-    font-size: 1rem;
-  }
 
   /* Contact Section  */
   #contact article {

@@ -1,6 +1,5 @@
 // Script written with the help of mdn web docs and chatGPT
 
-document.addEventListener('DOMContentLoaded', function() {
 // For click: 
 // Get all the links
 const navLinks = document.querySelectorAll('.nav-li a');
@@ -41,7 +40,7 @@ function handleIntersect(entries) {
     // Add when intersecting otherwise remove
     entries.forEach(function(entry) {
         // Got this to identify which link from chatGPT 
-        const navLink = document.querySelector(`.nav-li a[href="#${entry.target.id}"]`);
+        const navLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
 
         if(entry.isIntersecting) {
             navLink.classList.add('active-nav');
@@ -61,4 +60,4 @@ navSections.forEach(function(section) {
 
 
 
-})
+

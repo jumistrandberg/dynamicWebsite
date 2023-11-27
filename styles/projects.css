@@ -215,6 +215,9 @@ input {
 }
 
 @media (min-width: 700px) {
+    #projects {
+        margin: 0 auto;
+    }
     .user-info div {
         width: 45%;
         text-align: left;
