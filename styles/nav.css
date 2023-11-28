@@ -36,10 +36,10 @@ nav ul li a {
 }
 
 .active-nav {
-  /* background-image: url(/imgs/nav-eyes-min.png); */
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: 200% 400%; */
   font-weight: bolder;
   color: #FF90C2;
+}
+
+nav ul li a:hover {
+    color: #FF90C2;
 }
