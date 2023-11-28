@@ -1,22 +1,22 @@
 // Script written with the help of mdn web docs and chatGPT
 
-// For click: 
-// Get all the links
+// // For click: 
+// // Get all the links
 const navLinks = document.querySelectorAll('.nav-li a');
 
-navLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
+// navLinks.forEach(function(link) {
+//     link.addEventListener('click', function(event) {
 
-        // First remove the active class
-        navLinks.forEach(function(link) {
-            link.classList.remove('active-nav');
-        });
+//         // First remove the active class
+//         navLinks.forEach(function(link) {
+//             link.classList.remove('active-nav');
+//         });
 
-        // Then add the active class to the clicked a element
-        link.classList.add('active-nav');
+//         // Then add the active class to the clicked a element
+//         link.classList.add('active-nav');
         
-    })
-})
+//     })
+// })
 
 // For scroll:
 // Found info about intersection observer API from mdn web docs. Used the examples and templates for this part of the script.
@@ -39,15 +39,17 @@ function handleIntersect(entries) {
 
     // Add when intersecting otherwise remove
     entries.forEach(function(entry) {
-        // Got this to identify which link from chatGPT 
+        const sectionId = entry.target.getAttribute('id');
         // WHY EERRROORRPROJR
-        const navLink = document.querySelector(`.nav-li a[href="#${entry.target.id}"]`);
-
+        // const navLink = document.querySelector('.nav-li a[href="#' + sectionId + '"]');
 
         if(entry.isIntersecting) {
-            navLink.classList.add('active-nav');
+            navLinks.forEach(function(links) {
+                links.classList.remove('active-nav');
+                document.querySelector('.nav-li a[href="#' + sectionId + '"]').classList.add('active-nav');
+            })
         } else {
-            navLink.classList.remove('active-nav');
+            // navLink.classList.remove('active-nav');
         }
     });
 }
