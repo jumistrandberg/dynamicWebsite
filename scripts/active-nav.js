@@ -1,24 +1,8 @@
-// Script written with the help of mdn web docs and chatGPT
+// Script written with the help of mdn web docs
 
-// // For click: 
 // // Get all the links
 const navLinks = document.querySelectorAll('.nav-li a');
 
-// navLinks.forEach(function(link) {
-//     link.addEventListener('click', function(event) {
-
-//         // First remove the active class
-//         navLinks.forEach(function(link) {
-//             link.classList.remove('active-nav');
-//         });
-
-//         // Then add the active class to the clicked a element
-//         link.classList.add('active-nav');
-        
-//     })
-// })
-
-// For scroll:
 // Found info about intersection observer API from mdn web docs. Used the examples and templates for this part of the script.
 
 // Get all the sections 
