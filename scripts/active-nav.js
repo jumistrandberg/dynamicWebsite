@@ -24,8 +24,6 @@ function handleIntersect(entries) {
     // Add when intersecting otherwise remove
     entries.forEach(function(entry) {
         const sectionId = entry.target.getAttribute('id');
-        // WHY EERRROORRPROJR
-        // const navLink = document.querySelector('.nav-li a[href="#' + sectionId + '"]');
 
         if(entry.isIntersecting) {
             navLinks.forEach(function(links) {
