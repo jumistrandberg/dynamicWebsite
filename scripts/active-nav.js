@@ -15,7 +15,7 @@ const options = {
     // Don't need I think
     rootMargin: '0px',
     // How many percent the user can see when the observer's callback should be called
-    threshold: 0.2
+    threshold: 0.2,
 }; 
 
 // The callback function that is called when a section enters or leaves view
