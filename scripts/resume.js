@@ -2,6 +2,8 @@
 // Create variable for the container div declared in the index.html
 const cvContainer = document.getElementById("cv-container");
 
+// Trying to only fetch and call after everything is loaded into the DOM to address fail to load on Github pages
+document.addEventListener('DOMContentLoaded', function() {
 // Fetch the JSON file
 async function getCv() {
   const response = await fetch("../data/cv.json");
@@ -115,3 +117,6 @@ function displayCvItems(cvData) {
 
 // Call function
 getCv();
+
+})
+
