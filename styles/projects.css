@@ -1,50 +1,5 @@
 
 
-  /* Styles
-  .github-cards {
-    margin: 0;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-  
-  .github-card {
-    display: block;
-    box-sizing: border-box;
-    border: 1px solid var(--gray);
-    margin: 1rem 2.5rem;
-    padding: var(--spacing);
-    color: var(--text);
-    text-decoration: none;
-    font-size: 14px;
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .github-card-title {
-    margin-top: 0;
-    font-size: 2rem;
-  }
-
-  .github-card p {
-    margin: 1rem 0; 
-  }
-  
-  .github-card__meta {
-    margin-right: var(--spacing);
-  }
-
-  #projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30%;
-  } */
-
-
-
 #projects {
     margin: 0 auto;
     padding-top: 5%;
@@ -94,7 +49,6 @@
 
 .user-info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 2em;
     border-top-left-radius: 20px;
