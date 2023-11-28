@@ -39,14 +39,8 @@ To deploy website locally:
 2. Open the 'index.html' file in your preferred web browser.
 
 
-You may also find deployments here:
-Via Netlify:
+You may also view the website via Netlify:
 https://jumistrandberg.netlify.app/
-
-
-Via GitHub Pages:
-https://jumistrandberg.github.io/dynamicWebsite/
-
 
 
 
