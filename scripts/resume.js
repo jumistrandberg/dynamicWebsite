@@ -9,10 +9,29 @@ async function getCv() {
   const response = await fetch("../data/cv.json");
 
   if (response.ok) {
-    const cvData = await response.json();
+    let cvData;
+    try {
+      const response = await fetch('../data/cv.json');
+      if(!response.ok) {
+        throw new Error('Failed to fetch CV data');
+      }
+      cvData = await response.json();
+    } catch (error) {
+      console.error(error);
+      try {
+        const fallbackResponse = await fetch(URL('https://jumistrandberg.github.io/cv.json/cv.json'));
+        if(!fallbackResponse.ok) {
+          throw new Error('Unable to fetch fallback CV data');
+        }
+        cvData = await fallbackResponse.json();
+      } catch(fallbackError) {
+        console.log(fallbackError);
+        cvContainer.innerText = 'Error loading content';
+        return;
+      }
+    }
     displayCvItems(cvData);
   } else {
-    cvContainer.innerText = "Error loading content";
   }
 }
 
