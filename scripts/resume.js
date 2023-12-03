@@ -6,7 +6,7 @@ const cvContainer = document.getElementById("cv-container");
 document.addEventListener('DOMContentLoaded', function() {
 // Fetch the JSON file
 async function getCv() {
-  const response = await fetch("../data/cv.json");
+  const response = await fetch("./data/cv.json");
 
   if (response.ok) {
     const cvData = await response.json();
